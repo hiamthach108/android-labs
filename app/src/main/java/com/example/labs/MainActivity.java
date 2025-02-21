@@ -4,87 +4,50 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    static class ListLabItem {
+        String id;
+        Class<?> activityClass;
+
+        ListLabItem(String id, Class<?> activityClass) {
+            this.id = id;
+            this.activityClass = activityClass;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button lab1q1a = findViewById(R.id.lab1q1a);
-        Button lab1q1b = findViewById(R.id.lab1q1b);
-        Button lab1q2 = findViewById(R.id.lab1q2);
-        Button lab1q3 = findViewById(R.id.lab1q3);
-        Button lab2q1 = findViewById(R.id.lab2q1);
-        Button lab2q2 = findViewById(R.id.lab2q2);
-        Button lab2q3 = findViewById(R.id.lab2q3);
-        Button lab3q1 = findViewById(R.id.lab3q1);
-        Button lab3q2 = findViewById(R.id.lab3q2);
+        LinearLayout layout = findViewById(R.id.buttonContainer);
 
-        lab1q1a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab1q1a.class));
-            }
-        });
+        List<ListLabItem> labItems = new ArrayList<>();
+        labItems.add(new ListLabItem("lab1q1a", MainActivityLab1q1a.class));
+        labItems.add(new ListLabItem("lab1q1b", MainActivityLab1q1b.class));
+        labItems.add(new ListLabItem("lab1q2", MainActivityLab1q2.class));
+        labItems.add(new ListLabItem("lab1q3", MainActivityLab1q3.class));
+        labItems.add(new ListLabItem("lab2q1", MainActivityLab2q1.class));
+        labItems.add(new ListLabItem("lab2q2", MainActivityLab2q2.class));
+        labItems.add(new ListLabItem("lab2q3", MainActivityLab2q3.class));
+        labItems.add(new ListLabItem("lab3q1", MainActivityLab3q1.class));
+        labItems.add(new ListLabItem("lab3q2", MainActivityLab3q2.class));
+        labItems.add(new ListLabItem("lab5q1", MainActivityLab5q1.class));
 
-        lab1q1b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab1q1b.class));
-            }
-        });
-
-        lab1q2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab1q2.class));
-            }
-        });
-
-        lab1q3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab1q3.class));
-            }
-        });
-
-        lab2q1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab2q1.class));
-            }
-        });
-
-        lab2q2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab2q2.class));
-            }
-        });
-
-        lab2q3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab2q3.class));
-            }
-        });
-
-        lab3q1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab3q1.class));
-            }
-        });
-
-        lab3q2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivityLab3q2.class));
-            }
-        });
+        for (ListLabItem item : labItems) {
+            Button button = new Button(this);
+            button.setText(item.id);
+            button.setId(View.generateViewId());
+            button.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, item.activityClass)));
+            layout.addView(button);
+        }
     }
 }

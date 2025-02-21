@@ -1,64 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/lab1q1a"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 1 - Q1.a"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/lab1q1b"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 1 - Q1.b"/>
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
 
-    <Button
-        android:id="@+id/lab1q2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 1 - Q2"/>
+    </ScrollView>
 
-    <Button
-        android:id="@+id/lab1q3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 1 - Q3"/>
-
-
-    <!--    Lab 2 -->
-    <Button
-        android:id="@+id/lab2q1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 2 - Q1"/>
-
-    <Button
-        android:id="@+id/lab2q2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 2 - Q2"/>
-
-    <Button
-        android:id="@+id/lab2q3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 2 - Q3"/>
-
-    <!--    Lab 3 -->
-
-    <Button
-        android:id="@+id/lab3q1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 3 - Q1"/>
-
-    <Button
-        android:id="@+id/lab3q2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 3 - Q2"/>
 </LinearLayout>

@@ -32,6 +32,7 @@
         <activity android:name=".MainActivityLab2q3SignUp" />
         <activity android:name=".MainActivityLab3q1" />
         <activity android:name=".MainActivityLab3q2" />
+        <activity android:name=".MainActivityLab5q1" />
     </application>
 
 <!--    <uses-permission android:name="android.permission.INTERNET" />-->
