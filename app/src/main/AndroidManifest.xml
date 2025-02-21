@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Labs"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivityLab3q2"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivityLab1q1a" />
+        <activity android:name=".MainActivityLab1q1b" />
+        <activity android:name=".MainActivityLab1q2" />
+        <activity android:name=".MainActivityLab1q3" />
+        <activity android:name=".MainActivityLab2q1" />
+        <activity android:name=".MainActivityLab2q2" />
+        <activity android:name=".MainActivityLab2q3" />
+        <activity android:name=".MainActivityLab2q3SignUp" />
+        <activity android:name=".MainActivityLab3q1" />
+        <activity android:name=".MainActivityLab3q2" />
     </application>
 
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
 </manifest>

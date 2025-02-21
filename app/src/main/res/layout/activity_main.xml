@@ -1,19 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/lab1q1a"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Lab 1 - Q1.a"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/lab1q1b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 1 - Q1.b"/>
+
+    <Button
+        android:id="@+id/lab1q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 1 - Q2"/>
+
+    <Button
+        android:id="@+id/lab1q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 1 - Q3"/>
+
+
+    <!--    Lab 2 -->
+    <Button
+        android:id="@+id/lab2q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 2 - Q1"/>
+
+    <Button
+        android:id="@+id/lab2q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 2 - Q2"/>
+
+    <Button
+        android:id="@+id/lab2q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 2 - Q3"/>
+
+    <!--    Lab 3 -->
+
+    <Button
+        android:id="@+id/lab3q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 3 - Q1"/>
+
+    <Button
+        android:id="@+id/lab3q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 3 - Q2"/>
+</LinearLayout>
