@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         labItems.add(new ListLabItem("lab3q1", MainActivityLab3q1.class));
         labItems.add(new ListLabItem("lab3q2", MainActivityLab3q2.class));
         labItems.add(new ListLabItem("lab5q1", MainActivityLab5q1.class));
+        labItems.add(new ListLabItem("lab5q2", MainActivityLab5q2.class));
 
         for (ListLabItem item : labItems) {
             Button button = new Button(this);
