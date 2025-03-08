@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         labItems.add(new ListLabItem("lab2q3", MainActivityLab2q3.class));
         labItems.add(new ListLabItem("lab3q1", MainActivityLab3q1.class));
         labItems.add(new ListLabItem("lab3q2", MainActivityLab3q2.class));
+        labItems.add(new ListLabItem("lab4", MainActivityLab4.class));
         labItems.add(new ListLabItem("lab5q1", MainActivityLab5q1.class));
+        labItems.add(new ListLabItem("lab5q2", MainActivityLab5q2.class));
         labItems.add(new ListLabItem("lab9q1", MainActivityLab9.class));
         labItems.add(new ListLabItem("lab11", MainActivityLab11.class));
 
