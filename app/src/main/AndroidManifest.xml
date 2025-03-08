@@ -33,7 +33,10 @@
         <activity android:name=".MainActivityLab3q1" />
         <activity android:name=".MainActivityLab3q2" />
         <activity android:name=".MainActivityLab5q1" />
+        <activity android:name=".MainActivityLab9" />
+        <activity android:name=".MainActivityLab11" />
+        <activity android:name=".AddEditTraineeActivity" />
     </application>
 
-<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
