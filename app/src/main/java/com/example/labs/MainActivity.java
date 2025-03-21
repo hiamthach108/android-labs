@@ -43,7 +43,12 @@ public class MainActivity extends AppCompatActivity {
         labItems.add(new ListLabItem("lab4", MainActivityLab4.class));
         labItems.add(new ListLabItem("lab5q1", MainActivityLab5q1.class));
         labItems.add(new ListLabItem("lab5q2", MainActivityLab5q2.class));
-        labItems.add(new ListLabItem("lab9q1", MainActivityLab9.class));
+        labItems.add(new ListLabItem("lab6q1", MainActivityLab6q1.class));
+        labItems.add(new ListLabItem("lab6q2", MainActivityLab6q2.class));
+        labItems.add(new ListLabItem("lab6q3", MainActivityLab6q3.class));
+        labItems.add(new ListLabItem("lab7", MainActivityLab7.class));
+        labItems.add(new ListLabItem("lab8", MainActivityLab8.class));
+        labItems.add(new ListLabItem("lab9", MainActivityLab9.class));
         labItems.add(new ListLabItem("lab11", MainActivityLab11.class));
 
         for (ListLabItem item : labItems) {

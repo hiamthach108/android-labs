@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/shareTool" android:title="Share" />
+    <item android:id="@+id/searchTool" android:title="Search" />
+    <item android:id="@+id/contextTool" android:title="Context">
+        <menu>
+            <item android:id="@+id/emailTool" android:title="Email" />
+            <item android:id="@+id/phoneTool" android:title="Phone" />
+        </menu>
+    </item>
+</menu>

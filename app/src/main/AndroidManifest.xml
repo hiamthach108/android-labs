@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <application
         android:allowBackup="true"
         android:usesCleartextTraffic="true"
@@ -37,10 +38,18 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".MainActivityLab5q1" />
         <activity android:name=".MainActivityLab5q2" />
+        <activity android:name=".MainActivityLab6q1" />
+        <activity android:name=".MainActivityLab6q2" />
+        <activity android:name=".MainActivityLab6q3" />
+        <activity android:name=".MainActivityLab7" />
+        <activity android:name=".MainActivityLab8" />
         <activity android:name=".MainActivityLab9" />
         <activity android:name=".MainActivityLab11" />
         <activity android:name=".AddEditTraineeActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 </manifest>
